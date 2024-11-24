@@ -1,0 +1,146 @@
+.loginscreen{
+    background-color: var(--bgColor-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    .main{
+        background-color: var(--bgColor-2);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        padding: 2rem 3rem;
+        border-radius: 1.5rem;
+        min-height: 50vh;
+        min-width: 60vh;
+        gap: 2rem;
+        h1{
+            color: var(--secColor-1);
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            .inputcontrol{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border:  1.5px  solid var(--secColor-2);
+                padding: 10px;
+                border-radius: 10px;
+                gap: .3rem;
+           
+                label{
+                    font-size: .7rem;
+                    color: var(--secColor-2);
+                    font-weight: 300;
+                    width: 100%;
+                }
+                input{
+                    width: 100%;
+                    border: none;
+                    font-weight: 300;
+                    color: var(--textColor-1);
+                    font-size: 1rem;
+                    background: transparent;
+                }
+                input:focus{
+                    outline-width: 0;
+                }
+                input:-webkit-autofill,
+                    input:-webkit-autofill:focus {
+                        transition: background-color 600000s 0s, color 600000s 0s;
+                    }
+                    input:-webkit-autofill{
+                        -webkit-text-fill-color: var(--textColor-1);
+                    }
+                    input[data-autocompleted] {
+                        background-color: transparent !important;
+                    }
+            }
+            .passcontrol{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border: 1.5px solid var(--secColor-2);
+                padding: 10px;
+                border-radius: 10px;
+                gap: .3rem;
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start; 
+                    gap: .5rem;
+                    width: calc(100% - 1.8rem);
+                    background: transparent;
+                    label{
+                        font-size: .7rem;
+                        color: var(--secColor-2);
+                        font-weight: 300;
+                        width: 100%;
+                    }
+                    input{
+                        width: 100%;
+                        border: none;
+                        font-weight: 300;
+                        color: var(--textColor-1);
+                        font-size: 1rem;
+                        background: transparent;
+                    }
+                    input:focus{
+                        outline-width: 0;
+                    } 
+                }
+                .icon{
+                    font-size: 1.5rem;
+                    color: var(--textColor-1);
+                }
+                
+                
+            }
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--hover);
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: .8rem;
+            cursor: pointer;
+            h3{
+                color: var(--bgColor-2);
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+        .line{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h5{
+                color: var(--secColor-2);
+                font-size: 13px;
+                font-weight: 400;
+                span{
+                    color: var(--secColor-1);
+                    font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                }
+            }
+        }
+    
+    }
+}
